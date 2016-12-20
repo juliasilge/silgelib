@@ -1,0 +1,13 @@
+Package: silgelib
+Type: Package
+Title: Personal R Package of Julia Silge
+Version: 0.1.0
+Authors@R: c(person("Julia", "Silge", email = "julia.silge@gmail.com", role = c("aut", "cre")))
+Maintainer: Julia Silge <julia.silge@gmail.com>
+Description: R functions for my personal use
+License: MIT + file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Imports:
+    ggplot2
+RoxygenNote: 5.0.1
