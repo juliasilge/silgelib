@@ -21,6 +21,7 @@ and \url{https://fonts.google.com/specimen/Roboto}. These fonts must be
 installed locally on your computer for this theme to work.
 }
 \examples{
+\dontrun{
 library(ggplot2)
 
 ggplot(mtcars, aes(wt, mpg)) +
@@ -28,6 +29,7 @@ ggplot(mtcars, aes(wt, mpg)) +
     labs(title = "A Lovely Plot",
          subtitle = "What can the subtitle tell us?") +
     theme_roboto()
+}
 
 }
 
