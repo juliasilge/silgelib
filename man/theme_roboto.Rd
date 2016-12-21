@@ -4,10 +4,12 @@
 \alias{theme_roboto}
 \title{Minimal ggplot2 theme using the Roboto Condensed and Roboto Bold fonts}
 \usage{
-theme_roboto(...)
+theme_roboto(base_size = 11, ...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{theme_minimal}}
+\item{base_size}{base font size}
+
+\item{...}{Other arguments passed to \code{theme_minimal}}
 }
 \description{
 Minimal ggplot2 theme using the Roboto Condensed and Roboto Bold fonts
@@ -23,6 +25,8 @@ library(ggplot2)
 
 ggplot(mtcars, aes(wt, mpg)) +
     geom_point() +
+    labs(title = "A Lovely Plot",
+         subtitle = "What can the subtitle tell us?") +
     theme_roboto()
 
 }
