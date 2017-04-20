@@ -25,7 +25,7 @@ theme_roboto <- function(base_size = 11, ...) {
     ret$plot.title <- ggplot2::element_text(family="Roboto-Bold",
                                             size = rel(1.2),
                                             hjust = 0, vjust = 1,
-                                            margin = margin(b = base_size / 2 * 1.2)
+                                            ggplot2::margin = margin(b = base_size / 2 * 1.2)
                                             )
     ret
 }
