@@ -21,7 +21,8 @@
 #'
 #' @export
 theme_roboto <- function(base_size = 11, ...) {
-    ret <- ggplot2::theme_minimal(base_family = "RobotoCondensed-Regular", ...)
+    ret <- ggplot2::theme_minimal(base_family = "RobotoCondensed-Regular",
+                                  base_size = base_size, ...)
     ret$plot.title <- ggplot2::element_text(family="Roboto-Bold",
                                             size = rel(1.2),
                                             hjust = 0, vjust = 1,
