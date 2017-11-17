@@ -4,7 +4,9 @@
 \alias{theme_roboto}
 \title{Minimal ggplot2 theme using the Roboto Condensed and Roboto Bold fonts}
 \usage{
-theme_roboto(base_size = 11, ...)
+theme_roboto(base_size = 11, strip_text_size = 12, strip_text_margin = 5,
+  subtitle_size = 13, subtitle_margin = 10, plot_title_size = 18,
+  plot_title_margin = 10, ...)
 }
 \arguments{
 \item{base_size}{base font size}
@@ -32,4 +34,3 @@ ggplot(mtcars, aes(wt, mpg)) +
 }
 
 }
-
