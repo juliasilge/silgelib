@@ -56,7 +56,7 @@ theme_roboto <- function(base_size = 11,
 #' @param plot_title_size,plot_title_margin plot title size and margin
 #' @param ... Other arguments passed to \code{theme_minimal}
 #'
-#' @details The IBM Plex fonts are open sources and can be found at
+#' @details The IBM Plex fonts are open source and can be found at
 #' \url{https://ibm.github.io/type/}. These fonts must be installed locally on
 #' your computer for this theme to work.
 #'

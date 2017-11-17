@@ -23,7 +23,7 @@ theme_plex(base_size = 11, strip_text_size = 12, strip_text_margin = 5,
 Minimal ggplot2 theme using the IBM Plex Sans fonts
 }
 \details{
-The IBM Plex fonts are open sources and can be found at
+The IBM Plex fonts are open source and can be found at
 \url{https://ibm.github.io/type/}. These fonts must be installed locally on
 your computer for this theme to work.
 }
