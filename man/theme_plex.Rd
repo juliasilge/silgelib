@@ -11,6 +11,12 @@ theme_plex(base_size = 11, strip_text_size = 12, strip_text_margin = 5,
 \arguments{
 \item{base_size}{base font size}
 
+\item{strip_text_size, strip_text_margin}{plot strip text size and margin}
+
+\item{subtitle_size, subtitle_margin}{plot subtitle size and margin}
+
+\item{plot_title_size, plot_title_margin}{plot title size and margin}
+
 \item{...}{Other arguments passed to \code{theme_minimal}}
 }
 \description{

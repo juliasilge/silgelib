@@ -1,1 +1,1 @@
-globalVariables(c("theme_minimal", "rel", "margin"))
+globalVariables(c("theme_minimal", "margin"))

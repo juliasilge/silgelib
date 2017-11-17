@@ -1,6 +1,9 @@
 #' Minimal ggplot2 theme using the Roboto Condensed and Roboto Bold fonts
 #'
 #' @param base_size base font size
+#' @param strip_text_size,strip_text_margin plot strip text size and margin
+#' @param subtitle_size,subtitle_margin plot subtitle size and margin
+#' @param plot_title_size,plot_title_margin plot title size and margin
 #' @param ... Other arguments passed to \code{theme_minimal}
 #'
 #' @details The Roboto Condensed and Roboto Bold fonts are both Google fonts;
@@ -48,6 +51,9 @@ theme_roboto <- function(base_size = 11,
 #' Minimal ggplot2 theme using the IBM Plex Sans fonts
 #'
 #' @param base_size base font size
+#' @param strip_text_size,strip_text_margin plot strip text size and margin
+#' @param subtitle_size,subtitle_margin plot subtitle size and margin
+#' @param plot_title_size,plot_title_margin plot title size and margin
 #' @param ... Other arguments passed to \code{theme_minimal}
 #'
 #' @details The IBM Plex fonts are open sources and can be found at
