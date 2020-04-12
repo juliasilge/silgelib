@@ -33,15 +33,21 @@ theme_roboto <- function(base_size = 11,
                          ...) {
     ret <- ggplot2::theme_minimal(base_family = "RobotoCondensed-Regular",
                                   base_size = base_size, ...)
-    ret$strip.text <- ggplot2::element_text(hjust = 0, size=strip_text_size,
-                                            margin=margin(b=strip_text_margin),
-                                            family="Roboto-Bold")
-    ret$plot.subtitle <- ggplot2::element_text(hjust = 0, size=subtitle_size,
-                                               margin=margin(b=subtitle_margin),
-                                               family="RobotoCondensed-Regular")
-    ret$plot.title <- ggplot2::element_text(hjust = 0, size = plot_title_size,
-                                            margin=margin(b=plot_title_margin),
-                                            family="Roboto-Bold")
+    ret$strip.text <- ggplot2::element_text(
+        hjust = 0, size = strip_text_size,
+        margin = ggplot2::margin(b = strip_text_margin),
+        family = "Roboto-Bold"
+    )
+    ret$plot.subtitle <- ggplot2::element_text(
+        hjust = 0, size = subtitle_size,
+        margin = ggplot2::margin(b = subtitle_margin),
+        family = "RobotoCondensed-Regular"
+    )
+    ret$plot.title <- ggplot2::element_text(
+        hjust = 0, size = plot_title_size,
+        margin = ggplot2::margin(b = plot_title_margin),
+        family = "Roboto-Bold"
+    )
     ret
 }
 
@@ -71,7 +77,7 @@ theme_roboto <- function(base_size = 11,
 #'     theme_plex()
 #'
 #' ggplot(diamonds, aes(carat, price, color = clarity)) +
-#'     geom_point() +
+#'     geom_point(alpha = 0.7) +
 #'     facet_wrap(~cut) +
 #'     labs(title = "A Lovely Plot",
 #'          subtitle = "What can the subtitle tell us?") +
@@ -90,15 +96,21 @@ theme_plex <- function(base_size = 11,
                        ...) {
     ret <- ggplot2::theme_minimal(base_family = "IBMPlexSans",
                                   base_size = base_size, ...)
-    ret$strip.text <- ggplot2::element_text(hjust = 0, size=strip_text_size,
-                                            margin=margin(b=strip_text_margin),
-                                            family="IBMPlexSans-Medium")
-    ret$plot.subtitle <- ggplot2::element_text(hjust = 0, size=subtitle_size,
-                                               margin=margin(b=subtitle_margin),
-                                               family="IBMPlexSans")
-    ret$plot.title <- ggplot2::element_text(hjust = 0, size = plot_title_size,
-                                            margin=margin(b=plot_title_margin),
-                                            family="IBMPlexSans-Bold")
+    ret$strip.text <- ggplot2::element_text(
+        hjust = 0, size = strip_text_size,
+        margin = ggplot2::margin(b = strip_text_margin),
+        family = "IBMPlexSans-Medium"
+    )
+    ret$plot.subtitle <- ggplot2::element_text(
+        hjust = 0, size = subtitle_size,
+        margin = ggplot2::margin(b = subtitle_margin),
+        family = "IBMPlexSans"
+    )
+    ret$plot.title <- ggplot2::element_text(
+        hjust = 0, size = plot_title_size,
+        margin = ggplot2::margin(b = plot_title_margin),
+        family = "IBMPlexSans-Bold"
+    )
     ret
 }
 

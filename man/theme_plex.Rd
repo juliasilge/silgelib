@@ -4,9 +4,16 @@
 \alias{theme_plex}
 \title{Minimal ggplot2 theme using the IBM Plex Sans fonts}
 \usage{
-theme_plex(base_size = 11, strip_text_size = 12, strip_text_margin = 5,
-  subtitle_size = 13, subtitle_margin = 10, plot_title_size = 16,
-  plot_title_margin = 10, ...)
+theme_plex(
+  base_size = 11,
+  strip_text_size = 12,
+  strip_text_margin = 5,
+  subtitle_size = 13,
+  subtitle_margin = 10,
+  plot_title_size = 16,
+  plot_title_margin = 10,
+  ...
+)
 }
 \arguments{
 \item{base_size}{base font size}
@@ -38,7 +45,7 @@ ggplot(mtcars, aes(wt, mpg)) +
     theme_plex()
 
 ggplot(diamonds, aes(carat, price, color = clarity)) +
-    geom_point() +
+    geom_point(alpha = 0.7) +
     facet_wrap(~cut) +
     labs(title = "A Lovely Plot",
          subtitle = "What can the subtitle tell us?") +
